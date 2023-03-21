@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>currency programing</title>
     <style>
         *{
     box-sizing: border-box;
         }
         body{
             font-family: Arial, Helvetica, sans-serif;
+            background-image: url(pexels-pixabay-210600.jpg);
+            background-size: cover;
         }
+        
         .continer{
             display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     flex-direction: column;
-    box-shadow: -11px 7px 10px 4px #eee;
-
+    width: 400px;
+    height: 250px;
+    background-image: url(bitcoin-3089728__340.jpg);
+    background-size: cover;
+    border-radius: 8px
+        }
+        @media (max-width:776px){
+            .continer{
+                top: 42%;
+            }
         }
         input{
             width: 200px;
@@ -47,6 +58,15 @@
     padding: 5px 30px;
     font-weight: bold;
     font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+        }
+        #the-click:hover{
+            background-color: rgb(214 190 153);
+            color: white;
+        }
+        #result span{
+            color: darkblue;
         }
     </style>
 </head>
@@ -55,14 +75,6 @@
     <h3>سعر الدولار بنسبة للدول العربية</h3>
         <input type="number" id="theNumber">
         <div class="div-trans">
-        <!-- <label for="#transform"> من
-        <select name="thePrice" id="transform">
-            <option value="EGP">EGP</option>
-            <option value="EGP">SYR</option>
-            <option value="USD">USD</option>
-            <option value="EGP">FRANK</option>
-</select>
-</label> -->
 <label for="#the-Price-money"> الى
     <select name="thePrice" id="the-Price-money">
         <option value="SYP">سوريا</option>
