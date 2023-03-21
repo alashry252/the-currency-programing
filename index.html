@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .continer{
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    box-shadow: -11px 7px 10px 4px #eee;
+
+        }
+        input{
+            width: 200px;
+    height: 25px;
+    border: none;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 19px;
+        }
+        select{
+            border: 1px solid #ccc;
+        }
+        #the-click{
+            margin-top: 6px;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 30px;
+    font-weight: bold;
+    font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="continer">
+    <h3>سعر الدولار بنسبة للدول العربية</h3>
+        <input type="number" id="theNumber">
+        <div class="div-trans">
+        <!-- <label for="#transform"> من
+        <select name="thePrice" id="transform">
+            <option value="EGP">EGP</option>
+            <option value="EGP">SYR</option>
+            <option value="USD">USD</option>
+            <option value="EGP">FRANK</option>
+</select>
+</label> -->
+<label for="#the-Price-money"> الى
+    <select name="thePrice" id="the-Price-money">
+        <option value="SYP">سوريا</option>
+        <option value="EGP">مصر</option>
+        <option value="KWD">دينار كويتى</option>
+        <option value="QAR">ريال قطرى</option>
+        <option value="SAR"> ريال سعودى</option>
+        <option value="LBP">  الجنية اللبنانى</option>
+
+
+
+        
+</select>
+</label>
+</div>
+<button id="the-click">اضغط هنا</button>
+<div id="result">
+    <h4><span></span>ناتج التحويل هو</h4>
+</div>
+</div>
+
+    <Script src="main.js"></Script>
+</body>
+</html>
